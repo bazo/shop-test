@@ -17,10 +17,12 @@
 		"jsx": "react-jsx",
 		"baseUrl": "./src",
 		"paths": {
+			"api": ["./api/index.ts"],
 			"app/*": ["./app/*"],
 			"components/*": ["./components/*"],
 			"libs/*": ["./libs/*"],
-			"pages/*": ["./pages/*"]
+			"pages/*": ["./pages/*"],
+			"types": ["./api/types.ts"],
 		}
 	},
 	"include": ["./src"]
