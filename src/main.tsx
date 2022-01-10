@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import store from "app/store";
 import theme from "app/theme";
@@ -12,11 +11,7 @@ import App from "./App";
 
 const queryClient = new QueryClient();
 
-//@ts-ignore
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-//@ts-ignore
-root.render(
+ReactDOM.render(
 	<StrictMode>
 		<Provider store={store}>
 			<QueryClientProvider client={queryClient}>
@@ -28,5 +23,6 @@ root.render(
 				</ChakraProvider>
 			</QueryClientProvider>
 		</Provider>
-	</StrictMode>
+	</StrictMode>,
+	document.getElementById("root")
 );

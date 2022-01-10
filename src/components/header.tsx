@@ -118,7 +118,7 @@ const DesktopNav = ({ products }: { products: Product[] }) => {
 			))}
 			<Box>
 				<RouterLink to={"/basket"}>
-					items: {totalItems} price: {totalPrice}$
+					items: {totalItems} price: {totalPrice.toFixed(2)}$
 				</RouterLink>
 			</Box>
 		</Stack>

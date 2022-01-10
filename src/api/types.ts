@@ -11,6 +11,6 @@ export interface BasketItem {
 	quantity: number;
 }
 
-export interface BasketState {
-	items: BasketItem[];
+export interface CheckoutResponse {
+	msg: string;
 }

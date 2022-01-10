@@ -20,7 +20,7 @@ export function ProductCard({ product, basketState }: ProductCardProps) {
 	};
 
 	const canAdd = (basketState?.quantity || 0) < product.basketLimit;
-console.log(product.name, basketState)
+
 	return (
 		<Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
 			<Box p="6">
@@ -32,24 +32,19 @@ console.log(product.name, basketState)
 					{product.description}
 				</Box>
 
-				<Box>
-					{product.price}
-					<Box as="span" color="gray.600" fontSize="sm">
-						$
-					</Box>
-
-					{canAdd && (
-						<Button colorScheme="teal" size="md" onClick={addToBasket}>
-							Add to basket
-						</Button>
-					)}
-
-					{basketState && (
-						<Button colorScheme="teal" size="md" onClick={removeFromBasket}>
-							Remove from basket
-						</Button>
-					)}
-				</Box>
+				{product.price}
+				<br />
+				{canAdd && (
+					<Button colorScheme="teal" size="md" onClick={addToBasket}>
+						Add to basket
+					</Button>
+				)}
+				<br />
+				{basketState && (
+					<Button colorScheme="red" size="md" onClick={removeFromBasket}>
+						Remove from basket
+					</Button>
+				)}
 			</Box>
 		</Box>
 	);

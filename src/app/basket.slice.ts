@@ -1,14 +1,14 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { find, findIndex,  propEq, remove } from "ramda";
-import { BasketState, Product } from "types";
+import { find, findIndex, propEq, remove } from "ramda";
+import { BasketItem, Product } from "types";
 
 import { RootState } from "./store";
 
-
-
-const initialState: BasketState = {
+const initialState: { items: BasketItem[] } = {
 	items: [],
 };
+
+export type BasketState = typeof initialState;
 
 export const basketSlice = createSlice({
 	name: "counter",
@@ -43,7 +43,7 @@ export const basketSlice = createSlice({
 			}
 			return state;
 		},
-		removeAll: (state) => {
+		removeAll: () => {
 			return { items: [] };
 		},
 	},
@@ -55,7 +55,7 @@ export const { addProduct, removeProduct, removeAll } = basketSlice.actions;
 export default basketSlice.reducer;
 
 export function getProductFromBasket(product: Product) {
-	return ({ basket }: RootState) => {
-		return find(propEq("sku", product.sku), basket.items);
+	return (basket: BasketItem[]) => {
+		return find(propEq("sku", product.sku), basket);
 	};
 }

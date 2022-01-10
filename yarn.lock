@@ -5184,16 +5184,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.0.0-beta-24dd07bd2-20211208":
-  version: 18.0.0-beta-24dd07bd2-20211208
-  resolution: "react-dom@npm:18.0.0-beta-24dd07bd2-20211208"
+"react-dom@npm:^17.0.2":
+  version: 17.0.2
+  resolution: "react-dom@npm:17.0.2"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
-    scheduler: 0.21.0-beta-24dd07bd2-20211208
+    scheduler: ^0.20.2
   peerDependencies:
-    react: 18.0.0-beta-24dd07bd2-20211208
-  checksum: 03d03c13ba16627b020d3351148186d7f118442978f5aa70bd5da50cfdce5acbabc5db12b4104a250cae451354750451b5d19f98c1067dc96e0273202525109d
+    react: 17.0.2
+  checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
   languageName: node
   linkType: hard
 
@@ -5375,13 +5375,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.0.0-beta-24dd07bd2-20211208":
-  version: 18.0.0-beta-24dd07bd2-20211208
-  resolution: "react@npm:18.0.0-beta-24dd07bd2-20211208"
+"react@npm:^17.0.2":
+  version: 17.0.2
+  resolution: "react@npm:17.0.2"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
-  checksum: f3ed859eea5139ef96d4e15abbb451f0546ac6f8deb00e11bbb0824313c87b00e397dca26f9344bfbb44bb02bdb4b4de7bb374ea334401ab3cbe05c1de93de3b
+  checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
   languageName: node
   linkType: hard
 
@@ -5644,13 +5644,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:0.21.0-beta-24dd07bd2-20211208":
-  version: 0.21.0-beta-24dd07bd2-20211208
-  resolution: "scheduler@npm:0.21.0-beta-24dd07bd2-20211208"
+"scheduler@npm:^0.20.2":
+  version: 0.20.2
+  resolution: "scheduler@npm:0.20.2"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
-  checksum: 4ba375d51ff5ec7ab0bd4e6d357bc4f13b65706e63729eae22d1174424bfcc799ecaf7c498815896cd4d93a4b2b81626616b1ea302685f3e24dad890c6108fb5
+  checksum: c4b35cf967c8f0d3e65753252d0f260271f81a81e427241295c5a7b783abf4ea9e905f22f815ab66676f5313be0a25f47be582254db8f9241b259213e999b8fc
   languageName: node
   linkType: hard
 
@@ -6051,8 +6051,8 @@ __metadata:
     msw: ^0.36.3
     prettier: ^2.5.1
     ramda: ^0.27.1
-    react: ^18.0.0-beta-24dd07bd2-20211208
-    react-dom: ^18.0.0-beta-24dd07bd2-20211208
+    react: ^17.0.2
+    react-dom: ^17.0.2
     react-query: ^3.34.7
     react-redux: ^7.2.6
     react-router-dom: 6
